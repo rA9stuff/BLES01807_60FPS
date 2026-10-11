@@ -1,0 +1,17 @@
+{
+  "title": "GTA V PS3 (BLES01807) title update 1.27 - uncapped 60 FPS, vsync off (no menu option)",
+  "status": "Confirmed working on a CFW console (59.97 FPS)",
+  "applies_to": "decrypted USRDIR/EBOOT.BIN of title update 1.27 (EP1004-BLES01807_00-GTAVTITLEUPDATER), ELF sha1 7048a2c963dfb3b0440c13db21adde8ad4286a45",
+  "resign": "same as eboot_fps_toggle.json; no update.rpf changes needed",
+  "file_offset": "vaddr - 0x10000",
+  "patches": [
+    {"vaddr": "0x4a0d64", "file_offset": "0x490d64", "old": "3d088889", "new": "00000000",
+     "note": "CPU frame limiter threshold 1/30 s -> 0"},
+    {"vaddr": "0x4a7520", "file_offset": "0x497520", "old": "38600002", "new": "38600001",
+     "note": "li r3,2 -> li r3,1: argument for cellGcmSetFlipMode(CELL_GCM_DISPLAY_HSYNC)"},
+    {"vaddr": "0x4a7528", "file_offset": "0x497528", "old": "48726c15", "new": "4936028d",
+     "note": "bl SetPresentInterval(0xbce13c) -> bl import stub 0x18077b4; interval stays at its default of 1"},
+    {"vaddr": "0x1808e38", "file_offset": "0x17f8e38", "old": "d8f88e1a", "new": "4ae8d215",
+     "note": "FNID of unused import _cellGcmSetFlipCommandWithWaitLabel -> cellGcmSetFlipMode"}
+  ]
+}

@@ -1,0 +1,18 @@
+--- a/common/data/ui/pausemenu.xml
++++ b/common/data/ui/pausemenu.xml
+@@ -219,2 +219,3 @@
+ 		<Item>
++			<!-- FPS toggle mod: list unused by any item on PS3, repurposed for Frame Rate (value 0 = 60, 1 = 30) -->
+ 			<MenuOption>MENU_OPTION_DISPLAY_GPS_SPEECH</MenuOption>
+@@ -222,5 +223,4 @@
+ 			<MenuDisplayOptions>
+-				<Item> <cTextId>MO_OFF</cTextId> </Item>
+-				<Item> <cTextId>MO_GPS1</cTextId> </Item>
+-				<Item> <cTextId>MO_ON</cTextId> </Item>
++				<Item> <cTextId>MO_FPS_60</cTextId> </Item>
++				<Item> <cTextId>MO_FPS_30</cTextId> </Item>
+ 			</MenuDisplayOptions>
+@@ -1611,2 +1611,3 @@
+ 			<MenuItems>
++				<Item> <cTextId>MO_FRAMERATE</cTextId>	<MenuAction>MENU_OPTION_ACTION_PREF_CHANGE</MenuAction>		<MenuPref>PREF_HDR</MenuPref> 			<MenuOption>MENU_OPTION_DISPLAY_GPS_SPEECH</MenuOption>	<MenuUniqueId>MENU_UNIQUE_ID_SETTINGS_LIST</MenuUniqueId> </Item>
+ 				<Item> <cTextId>MO_CAMERAHEIGHT</cTextId> <MenuAction>MENU_OPTION_ACTION_PREF_CHANGE</MenuAction>	<MenuPref>PREF_CAMERA_HEIGHT</MenuPref> 	<MenuOption>MENU_OPTION_CAMERA_HEIGHT</MenuOption>	<MenuUniqueId>MENU_UNIQUE_ID_SETTINGS_LIST</MenuUniqueId> </Item>

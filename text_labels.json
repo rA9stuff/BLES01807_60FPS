@@ -1,0 +1,10 @@
+{
+  "title": "Text labels for the Frame Rate row",
+  "target": "global.gxt2 inside update.rpf/ps3/patch/data/lang/<language>.rpf, for all 11 languages (american, chinese, french, german, italian, korean, mexican, polish, portuguese, russian, spanish)",
+  "hash": "joaat of the lowercase label; insert keeping GXT2 entries sorted by unsigned hash",
+  "labels": [
+    {"label": "MO_FRAMERATE", "hash": "0xf7f8b51d", "text": "Frame Rate"},
+    {"label": "MO_FPS_60", "hash": "0x47cc27f0", "text": "60 FPS"},
+    {"label": "MO_FPS_30", "hash": "0xffb49b72", "text": "30 FPS"}
+  ]
+}
